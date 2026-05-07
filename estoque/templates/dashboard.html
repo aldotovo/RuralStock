@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Estoque por Produto</h2>
+
+
+<canvas id="grafico"></canvas>
+
+<script>
+    const ctx = document.getElementById('grafico');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ produtos|safe }},
+            datasets: [
+                {
+                    label: 'Entrada',
+                    data: {{ entrada|safe }},
+                },
+                {
+                    label: 'Saída',
+                    data: {{ saida|safe }},
+                }
+            ]
+        }
+    });
+</script>
+
+</body>
+</html>
