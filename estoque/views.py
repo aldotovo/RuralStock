@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Movimentacao
 from collections import defaultdict
-
 import json
 
 def dashboard(request):
@@ -27,5 +26,8 @@ def dashboard(request):
         'saida': json.dumps(dados_saida),
     }
 
-
     return render(request, 'dashboard.html', context)
+
+
+def home(request):
+    return render(request, 'home.html')
