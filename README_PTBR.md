@@ -64,9 +64,9 @@ Fornecer uma ferramenta acessível para pequenos produtores rurais e pequenas em
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/ruralstock.git
+git clone https://github.com/your-username/ruralstock.git
 
-# Acessar a pasta do projeto
+# Entrar na pasta do projeto
 cd ruralstock
 
 # Criar ambiente virtual

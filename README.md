@@ -60,7 +60,7 @@ To provide an accessible tool for small farmers and rural businesses to manage i
 
 ---
 
-## How to Run the Project
+##   How to Run the Project
 
 ```bash
 # Clone the repository
@@ -86,8 +86,3 @@ python manage.py createsuperuser
 
 # Start server
 python manage.py runserver
-
-Once the server is running, you can access:
-
-- Admin panel: http://127.0.0.1:8000/admin  
-- Dashboard: http://127.0.0.1:8000/dashboard/
